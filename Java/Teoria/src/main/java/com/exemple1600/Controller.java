@@ -64,7 +64,7 @@ public class Controller {
 
     @FXML
     private void cleanAction(ActionEvent event){
-        String cleanScreen = "";
-        textArea.setText(cleanScreen);
+        titleText.clear();
+        textArea.clear();
     }
 }
