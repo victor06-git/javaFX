@@ -8,12 +8,13 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.exemple1600.Controller">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: gold;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.exemple1600.Controller">
    <children>
-      <HBox alignment="TOP_CENTER" layoutX="140.0" layoutY="46.0" prefHeight="127.0" prefWidth="600.0" spacing="5.0" AnchorPane.bottomAnchor="280.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <HBox alignment="TOP_CENTER" layoutX="140.0" layoutY="46.0" prefHeight="127.0" prefWidth="600.0" spacing="5.0" style="-fx-background-color: salmon;" AnchorPane.bottomAnchor="280.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Label alignment="CENTER" prefHeight="44.0" prefWidth="65.0" text="Title">
+            <Label alignment="CENTER" prefHeight="44.0" prefWidth="65.0" text="Title" textFill="WHITE">
                <HBox.margin>
                   <Insets left="20.0" />
                </HBox.margin>
@@ -23,8 +24,11 @@
                <cursor>
                   <Cursor fx:constant="NONE" />
                </cursor>
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
             </Label>
-            <TextField fx:id="titleText" alignment="TOP_CENTER">
+            <TextField fx:id="titleText" alignment="TOP_CENTER" style="-fx-background-color: orange;">
                <HBox.margin>
                   <Insets left="45.0" right="-20.0" />
                </HBox.margin>
@@ -32,10 +36,13 @@
                   <Insets />
                </opaqueInsets>
             </TextField>
-            <Button fx:id="buttonSave1" mnemonicParsing="false" onAction="#fillAction" style="-fx-background-color: green;" text="Load" textAlignment="CENTER">
+            <Button fx:id="buttonLoad" mnemonicParsing="false" onAction="#actionLoadJSON" style="-fx-background-color: green;" text="Load" textAlignment="CENTER" textFill="WHITE">
                <HBox.margin>
                   <Insets left="40.0" top="-50.0" />
                </HBox.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
             </Button>
          </children>
          <padding>
@@ -44,22 +51,25 @@
       </HBox>
       <HBox fx:id="hbox_1" alignment="CENTER" layoutX="420.0" layoutY="297.0" prefHeight="110.0" prefWidth="103.0" spacing="10.0">
          <children>
-            <Button fx:id="buttonSave" mnemonicParsing="false" onAction="#saveAction" text="Save" textAlignment="CENTER" textFill="#1b00e8" />
+            <Button fx:id="buttonSave" mnemonicParsing="false" onAction="#actionSaveJSON" style="-fx-background-color: blue;" text="Save" textAlignment="CENTER" textFill="WHITE" />
          </children>
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
       </HBox>
-      <HBox alignment="CENTER_RIGHT" layoutX="112.0" layoutY="128.0" prefHeight="244.0" prefWidth="317.0" spacing="30.0">
+      <HBox alignment="CENTER_RIGHT" layoutX="112.0" layoutY="128.0" prefHeight="244.0" prefWidth="317.0" spacing="30.0" style="-fx-background-color: cyan;">
          <children>
             <Label text="Text :">
                <HBox.margin>
                   <Insets right="20.0" />
                </HBox.margin>
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
             </Label>
-            <TextArea fx:id="textArea" prefHeight="247.0" prefWidth="207.0" />
+            <TextArea fx:id="textArea" prefHeight="247.0" prefWidth="207.0" style="-fx-background-color: yellow;" />
          </children>
       </HBox>
-      <Button fx:id="buttonClean" layoutX="438.0" layoutY="136.0" mnemonicParsing="false" onAction="#cleanAction" style="-fx-background-color: red;" text="Clean" textAlignment="CENTER" textFill="#070707" />
+      <Button fx:id="buttonClean" layoutX="438.0" layoutY="136.0" mnemonicParsing="false" onAction="#cleanAction" style="-fx-background-color: red;" text="Clean" textAlignment="CENTER" textFill="WHITE" />
    </children>
 </AnchorPane>
