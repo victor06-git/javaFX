@@ -24,6 +24,9 @@ public class Controller {
     private Button buttonClean;
 
     @FXML
+    private Button buttonLoad;
+
+    @FXML
     private TextField titleText;
 
     @FXML

@@ -50,19 +50,6 @@
                 <goals>
                   <goal>java</goal>
                 </goals>
-                <configuration>
-                  <mainClass>${exec.mainClass}</mainClass>
-                  <arguments>
-                    <argument>${javafx.platform}</argument>
-                  </arguments>
-                  <commandlineArgs>--add-opens java.base/java.lang=ALL-UNNAMED
-                                --add-opens java.base/java.nio=ALL-UNNAMED
-                                --add-opens java.base/java.util=ALL-UNNAMED</commandlineArgs>
-                  <systemPropertyVariables>
-                    <javafx.platform>${javafx.platform}</javafx.platform>
-                  </systemPropertyVariables>
-                  <classpathScope>test</classpathScope>
-                </configuration>
               </execution>
             </executions>
             <configuration>
