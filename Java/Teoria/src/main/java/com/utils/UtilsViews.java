@@ -1,6 +1,8 @@
 package com.utils;
 import java.util.ArrayList;
 
+import com.exercici1603.Controller1;
+
 import javafx.animation.Interpolator;
 import javafx.animation.KeyFrame;
 import javafx.animation.KeyValue;
@@ -13,6 +15,7 @@ import javafx.scene.layout.StackPane;
 import javafx.util.Duration;
 
 public class UtilsViews {
+    
 
     public static StackPane parentContainer = new StackPane();
     public static ArrayList<Object> controllers = new ArrayList<>();

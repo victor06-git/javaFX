@@ -30,13 +30,13 @@ public class Controller0 {
     @FXML
     private AnchorPane container;
     @FXML
-    private File lastOpenedFile;
-    @FXML
     private TextArea textArea;
     @FXML
     private ImageView imag;
     @FXML
     private Label nomText, actText, dataText;
+
+    public File lastOpenedFile;
 
 
     @FXML
@@ -46,27 +46,11 @@ public class Controller0 {
 
     @FXML
     private void animateToView1(ActionEvent event) {
-        try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/assets/exercici1603View1.fxml"));
-            Parent root = loader.load();
-            // Obtén el controlador de la segunda vista
-            Controller1 controller1 = loader.getController();
-
-            // Pasa el contenido del JSON a la segunda vista
-            if (lastOpenedFile != null) {
-                String jsonContent = new String(Files.readAllBytes(lastOpenedFile.toPath()));
-                controller1.setJsonContent(jsonContent);
-            }
-
-            UtilsViews.setViewAnimating("View1");
-
-        } catch (Exception e) {
-            System.err.println(e.getMessage());
-        }
-        
+            UtilsViews.setViewAnimating("View1");        
     }
 
-
+    
+    @FXML
     private void loadImageFromJSON(String jsonContent) {
         try {
             JSONObject jsonObject = new JSONObject(jsonContent);
@@ -119,6 +103,8 @@ public class Controller0 {
             }
         }
     }
+
+    
 
    
     
