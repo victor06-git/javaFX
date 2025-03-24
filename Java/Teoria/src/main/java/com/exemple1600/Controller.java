@@ -38,7 +38,7 @@ public class Controller {
         FileChooser fileChooser = new FileChooser();
         fileChooser.setInitialDirectory(new File(System.getProperty("user.dir")));
         fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("Arxius JSON", "*.json"));
-        File selectedFile = fileChooser.showOpenDialog(stage);
+        File selectedFile = fileChooser.showOpenDialog(stage); //Donde se encuentra el archivo seleccionado
         if (selectedFile != null) {
             try {
                 String content = new String(Files.readAllBytes(selectedFile.toPath()));
