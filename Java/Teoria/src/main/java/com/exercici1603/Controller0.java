@@ -36,8 +36,6 @@ public class Controller0 {
     @FXML
     private Label nomText, actText, dataText;
 
-
-
     @FXML
     private void animateToView0(ActionEvent event) {
         UtilsViews.setViewAnimating("View0");
