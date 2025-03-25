@@ -105,9 +105,7 @@ public class Controller0 {
         alert.setContentText(message); //Contenido de la alerta
         alert.showAndWait();
     }
-        
-
     
         
-    }
+}
     
