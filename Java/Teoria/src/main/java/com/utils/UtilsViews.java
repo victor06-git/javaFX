@@ -16,6 +16,7 @@ import javafx.util.Duration;
 
 public class UtilsViews {
     
+    
 
     public static StackPane parentContainer = new StackPane();
     public static ArrayList<Object> controllers = new ArrayList<>();
