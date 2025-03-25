@@ -1,7 +1,6 @@
 package com.utils;
 import java.util.ArrayList;
 
-import com.exercici1603.Controller1;
 
 import javafx.animation.Interpolator;
 import javafx.animation.KeyFrame;

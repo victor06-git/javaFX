@@ -54,59 +54,6 @@ public class Controller0 {
         }
     }
             
-    
-    // @FXML
-    // private void loadImageFromJSON(String jsonContent) {
-    //     try {
-    //         JSONObject jsonObject = new JSONObject(jsonContent);
-    //         if (jsonObject.has("imageName")) {
-    //             String imageName = jsonObject.getString("imageName");
-    
-    //             // Cargar la imagen desde el classpath
-    //             String imagePath = "/assets/images/" + imageName;
-    //             System.out.println("Intentando cargar la imagen desde: " + imagePath);
-    //             Image image = new Image(getClass().getResourceAsStream(imagePath));
-    //             if (image.isError()) {
-    //                 System.out.println("No se pudo cargar la imagen: " + imagePath);
-    //             } else {
-    //                 System.out.println("Contenido del JSON: " + jsonContent);
-    //                 System.out.println("Ruta de la imagen: " + imagePath);
-    //                 imag.setImage(image);
-    //                 System.out.println("Imagen cargada correctamente: " + imagePath);
-    //             }
-    //         } else {
-    //             System.out.println("El JSON no contiene el campo 'imageName'.");
-    //         }
-    //     } catch (org.json.JSONException e) {
-    //         System.out.println("Error al parsear el JSON: " + e.getMessage());
-    //     } catch (Exception e) {
-    //         e.printStackTrace();
-    //     }
-    // }
-
-
-    // Carrega un arxiu .json a un quadre de text tipus "TextArea"
-    // @FXML
-    // private void actionLoadJSON() {
-    //     Stage stage = (Stage) buttonLoad.getScene().getWindow();
-    //     FileChooser fileChooser = new FileChooser();
-    //     fileChooser.setInitialDirectory(new File(System.getProperty("user.dir")));
-    //     fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("Arxius JSON", "*.json"));
-    //     File selectedFile = fileChooser.showOpenDialog(stage); //Donde se encuentra el archivo seleccionado
-    //     if (selectedFile != null) {
-    //         try {
-    //             String content = new String(Files.readAllBytes(selectedFile.toPath()));
-    //             loadImageFromJSON(content);
-    //             JSONObject jsonObject = new JSONObject(content);
-    //             nomText.setText((String) jsonObject.get("nom"));
-    //             actText.setText((String) jsonObject.get("activitat"));
-    //             dataText.setText((String) jsonObject.get("data_naixement"));
-    //             textArea.setText((String) jsonObject.get("text"));
-    //         } catch (IOException e) {
-    //             e.printStackTrace();
-    //         }
-    //     }
-    // }
     @FXML
     private void actionLoadJSON() {
         FileChooser fileChooser = new FileChooser();
