@@ -22,7 +22,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </ImageView>
-                  <Label maxHeight="50.0" text="Game" translateX="-25.0" HBox.hgrow="ALWAYS">
+                  <Label maxHeight="50.0" text="Joc" translateX="-25.0" HBox.hgrow="ALWAYS">
                      <font>
                         <Font size="24.0" />
                      </font>

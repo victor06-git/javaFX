@@ -11,6 +11,7 @@ import org.json.JSONObject;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.image.Image;
@@ -20,6 +21,16 @@ import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
 public class ControllerMain {
+
+    @FXML
+    private ImageView image;
+
+
+    @FXML
+    public void initialize() {
+        Image img = new Image(getClass().getResourceAsStream("/icons/kirbyNintendo.gif"));
+        image.setImage(img);
+    }
 
     @FXML
     private void toViewCharacters(MouseEvent event) {
