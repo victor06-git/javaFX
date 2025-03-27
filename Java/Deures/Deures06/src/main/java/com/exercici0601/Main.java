@@ -3,8 +3,6 @@ package com.exercici0601;
 import com.utils.*;
 
 import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
@@ -30,6 +28,7 @@ public class Main extends Application {
         UtilsViews.addView(getClass(), "ViewGames", "/assets/viewGames.fxml");
         UtilsViews.addView(getClass(), "ViewConsoles", "/assets/viewConsoles.fxml");
         UtilsViews.addView(getClass(), "ViewCharacter", "/assets/viewCharacter.fxml");
+        //UtilsViews.addView(getClass(), "ViewGame", "/assets/viewGame.fxml");
 
         Scene scene = new Scene(UtilsViews.parentContainer);
 

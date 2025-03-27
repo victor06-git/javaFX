@@ -2,6 +2,7 @@ package com.exercici0601;
 
 import java.util.Objects;
 
+
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
@@ -45,5 +46,11 @@ public class ControllerItem2 {
     public void setYear(Integer year) {
         this.year.setText(Integer.toString(year));
     }
+
+    // public void toViewConsole(MouseEvent event){
+    //     ControllerGame crtl = (ControllerGame) UtilsViews.getController("ViewGame");
+    //     crtl.setNom(title.getText());
+    //     UtilsViews.setViewAnimating("ViewGame");
+    // }
 
 }

@@ -48,6 +48,9 @@ public class ControllerItem1 {
     public void toViewCharacter(MouseEvent event){
         ControllerCharacter crtl = (ControllerCharacter) UtilsViews.getController("ViewCharacter");
         crtl.setNom(title.getText());
+        crtl.setCircle(circle.getStyle());
+        crtl.setGame(subtitle.getText());
+        crtl.setImage(image.getImage());
         UtilsViews.setViewAnimating("ViewCharacter");
     }
 }

@@ -27,7 +27,7 @@ public class ControllerCharacters implements Initializable {
     private ImageView imgArrowBack;
 
     @FXML
-    private VBox list = new VBox();
+    private VBox list;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
