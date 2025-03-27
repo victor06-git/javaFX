@@ -15,7 +15,9 @@ import org.json.JSONObject;
 
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Label;
+import javafx.scene.Parent;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
@@ -48,19 +50,38 @@ public class ControllerCharacters implements Initializable {
             Path path = Paths.get(jsonFileURL.toURI());
             String content = new String(Files.readAllBytes(path), StandardCharsets.UTF_8);
             JSONArray jsonInfo = new JSONArray(content);
-
+            String pathImages = "/assets/images0601/";
+            
             list.getChildren().clear();
             for (int i = 0; i < jsonInfo.length(); i++) {
                 JSONObject character = jsonInfo.getJSONObject(i);
                 String name = character.getString("name");
+                String image = character.getString("image");
+                String color = character.getString("color");
+                String game = character.getString("game");
                 
                 // TODO: Aquí carregar subvista  
                 // amb les dades de cada objecte enlloc d'un Label
-                Label label = new Label(name);
-                label.setStyle("-fx-border-color: green;");
-                list.getChildren().add(label);
+                URL resource = this.getClass().getResource("/assets/subviewCharacters.fxml");
+                FXMLLoader loader = new FXMLLoader(resource);
+                Parent itemPane = loader.load();
+                ControllerItem1 itemController = loader.getController();
+
+                itemController.setCircleColor(color);
+                itemController.setImage(pathImages + image);
+                itemController.setTitle(name);
+                itemController.setSubtitle(game);
+                
+
+                // Afegir el nou element a l'espai que l'hi hem reservat (itemBox)
+                list.getChildren().add(itemPane);
+
+                // Label label = new Label(name);
+                // label.setStyle("-fx-border-color: green;");
+                // list.getChildren().add(label);
             }
         } catch (Exception e) {
+            System.err.println("Error al cargar la lista de personajes");
             e.printStackTrace();
         }
     }
