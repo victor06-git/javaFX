@@ -21,13 +21,13 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.VBox;
 
-public class ControllerGames implements Initializable {
+public class ControllerConsoles implements Initializable {
 
     @FXML
     private ImageView imgArrowBack;
 
     @FXML
-    private VBox list_games;
+    private VBox list;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -44,12 +44,12 @@ public class ControllerGames implements Initializable {
 
     public void loadList() {
         try {
-            URL jsonFileURL = getClass().getResource("/assets/data/games.json");
+            URL jsonFileURL = getClass().getResource("/assets/data/consoles.json");
             Path path = Paths.get(jsonFileURL.toURI());
             String content = new String(Files.readAllBytes(path), StandardCharsets.UTF_8);
             JSONArray jsonInfo = new JSONArray(content);
 
-            list_games.getChildren().clear();
+            list.getChildren().clear();
             for (int i = 0; i < jsonInfo.length(); i++) {
                 JSONObject character = jsonInfo.getJSONObject(i);
                 String name = character.getString("name");
@@ -58,7 +58,7 @@ public class ControllerGames implements Initializable {
                 // amb les dades de cada objecte enlloc d'un Label
                 Label label = new Label(name);
                 label.setStyle("-fx-border-color: green;");
-                list_games.getChildren().add(label);
+                list.getChildren().add(label);
             }
         } catch (Exception e) {
             e.printStackTrace();

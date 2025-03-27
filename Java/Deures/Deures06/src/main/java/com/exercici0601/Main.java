@@ -28,6 +28,7 @@ public class Main extends Application {
         UtilsViews.addView(getClass(), "ViewMain", "/assets/viewMain.fxml");
         UtilsViews.addView(getClass(), "ViewCharacters", "/assets/viewCharacters.fxml");
         UtilsViews.addView(getClass(), "ViewGames", "/assets/viewGames.fxml");
+        UtilsViews.addView(getClass(), "ViewConsoles", "/assets/viewConsoles.fxml");
 
         Scene scene = new Scene(UtilsViews.parentContainer);
 
