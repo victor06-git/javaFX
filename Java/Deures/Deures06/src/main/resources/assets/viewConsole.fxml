@@ -41,7 +41,7 @@
                         <Insets />
                      </VBox.margin>
                   </Label>
-                  <Circle fx:id="circle" fill="DODGERBLUE" radius="20.0" scaleZ="0.5" stroke="BLACK" strokeType="INSIDE" translateX="1.0" translateY="240.0">
+                  <Circle fx:id="circle" fill="DODGERBLUE" radius="20.0" scaleZ="0.5" stroke="BLACK" strokeType="INSIDE" translateX="1.0" translateY="230.0">
                      <VBox.margin>
                         <Insets left="200.0" />
                      </VBox.margin>
