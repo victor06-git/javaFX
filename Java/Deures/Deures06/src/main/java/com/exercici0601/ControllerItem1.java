@@ -2,10 +2,13 @@ package com.exercici0601;
 
 import java.util.Objects;
 
+import com.utils.UtilsViews;
+
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.shape.Circle;
 
 
@@ -40,5 +43,11 @@ public class ControllerItem1 {
 
     public void setCircleColor(String color) {
         circle.setStyle("-fx-fill: " + color);
+    }
+
+    public void toViewCharacter(MouseEvent event){
+        ControllerCharacter crtl = (ControllerCharacter) UtilsViews.getController("ViewCharacter");
+        crtl.setNom(title.getText());
+        UtilsViews.setViewAnimating("ViewCharacter");
     }
 }
