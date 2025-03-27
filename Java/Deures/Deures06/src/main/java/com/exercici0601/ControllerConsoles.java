@@ -86,6 +86,8 @@ public class ControllerConsoles implements Initializable {
         }
     }
 
+    
+
     @FXML
     private void toViewMain(MouseEvent event) {
         UtilsViews.setViewAnimating("ViewMain");

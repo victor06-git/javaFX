@@ -2,12 +2,15 @@ package com.exercici0601;
 
 import java.util.Objects;
 
+import com.utils.UtilsViews;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.control.TextArea;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.shape.Circle;
 
 
 public class ControllerItem2 {
@@ -47,10 +50,14 @@ public class ControllerItem2 {
         this.year.setText(Integer.toString(year));
     }
 
-    // public void toViewConsole(MouseEvent event){
-    //     ControllerGame crtl = (ControllerGame) UtilsViews.getController("ViewGame");
-    //     crtl.setNom(title.getText());
-    //     UtilsViews.setViewAnimating("ViewGame");
-    // }
+    public void toViewGame(MouseEvent event){
+        ControllerGame crtl = (ControllerGame) UtilsViews.getController("ViewGame");
+        crtl.setNom(title.getText());
+        crtl.setImage(image.getImage());
+        crtl.setPlot(plot.getText());
+        crtl.setType(subtitle.getText());
+        crtl.setYear(year.getText());
+        UtilsViews.setViewAnimating("ViewGame");
+    }
 
 }

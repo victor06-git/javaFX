@@ -7,7 +7,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="112.0" maxWidth="274.0" minHeight="-Infinity" nodeOrientation="RIGHT_TO_LEFT" prefHeight="112.0" prefWidth="274.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.exercici0601.ControllerItem2">
+<AnchorPane maxHeight="112.0" maxWidth="274.0" minHeight="-Infinity" nodeOrientation="RIGHT_TO_LEFT" onMouseClicked="#toViewGame" prefHeight="112.0" prefWidth="274.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.exercici0601.ControllerItem2">
    <children>
       <ImageView fx:id="image" fitHeight="63.0" fitWidth="73.0" layoutX="193.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="27.0" AnchorPane.leftAnchor="193.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="10.0" />
       <TextArea fx:id="plot" layoutX="7.0" layoutY="25.0" prefHeight="50.0" prefWidth="177.0" />

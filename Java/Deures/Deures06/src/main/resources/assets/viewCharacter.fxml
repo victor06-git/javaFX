@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -15,7 +16,12 @@
          <children>
             <HBox alignment="CENTER" maxHeight="50.0" minHeight="50.0" spacing="10.0" style="-fx-background-color: rgb(150,190,250);" VBox.vgrow="NEVER">
                <children>
-                  <Label maxHeight="50.0" text="Character" HBox.hgrow="ALWAYS">
+                  <ImageView fx:id="imgArrowBack" fitHeight="25.0" fitWidth="25.0" onMouseClicked="#toViewMain" pickOnBounds="true" preserveRatio="true" translateX="-55.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Label maxHeight="50.0" text="Character" translateX="-20.0" HBox.hgrow="ALWAYS">
                      <font>
                         <Font size="24.0" />
                      </font>

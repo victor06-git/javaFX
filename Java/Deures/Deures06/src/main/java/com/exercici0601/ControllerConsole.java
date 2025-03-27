@@ -4,7 +4,7 @@ import java.net.URL;
 import java.nio.file.Path;
 import java.util.ResourceBundle;
 
-import com.utils.*;
+import com.utils.UtilsViews;
 
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -13,11 +13,12 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.shape.Circle;
+import javafx.scene.text.Text;
 
 
-public class ControllerCharacter implements Initializable {
+public class ControllerConsole implements Initializable{
     @FXML
-    private Label nom, game;
+    private Label nom, cpu, units, date;
 
     @FXML
     private Circle circle;
@@ -42,22 +43,29 @@ public class ControllerCharacter implements Initializable {
         this.nom.setText(nom);
     }
 
-    public void setCircle(String circle){ 
-        this.circle.setStyle(circle);
-    }
-
-    public void setGame(String game) {
-        this.game.setText(game);
-    }
-
     public void setImage(Image image){
         this.image.setImage(image);
     }
 
-    @FXML
-    private void toViewMain(MouseEvent event) {
-        UtilsViews.setViewAnimating("ViewCharacters");
+    public void setUnit(String unit) {
+        this.units.setText(unit);
     }
 
+    public void setCpu(String cpu){
+        this.cpu.setText(cpu);
+    }
+
+    public void setCircle(String circle){ 
+        this.circle.setStyle(circle);
+    }
+
+    public void setDate(String date){
+        this.date.setText(date);
+    }
+
+    @FXML
+    private void toViewMain(MouseEvent event) {
+        UtilsViews.setViewAnimating("ViewConsoles");
+    }
 
 }

@@ -2,10 +2,13 @@ package com.exercici0601;
 
 import java.util.Objects;
 
+import com.utils.UtilsViews;
+
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.shape.Circle;
 
 
@@ -49,6 +52,17 @@ public class ControllerItem3 {
 
     public void setCircleColor(String color) {
         circle.setStyle("-fx-fill: " + color);
+    }
+
+    public void toViewConsole(MouseEvent event){
+        ControllerConsole crtl = (ControllerConsole) UtilsViews.getController("ViewConsole");
+        crtl.setNom(title.getText());
+        crtl.setCircle(circle.getStyle());
+        crtl.setCpu(cpu.getText());
+        crtl.setDate(date.getText());
+        crtl.setImage(image.getImage());
+        crtl.setUnit(unit.getText());
+        UtilsViews.setViewAnimating("ViewConsole");
     }
 
 }
