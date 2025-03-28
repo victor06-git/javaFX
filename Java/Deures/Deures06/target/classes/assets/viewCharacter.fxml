@@ -33,7 +33,7 @@
             </HBox>
             <VBox fx:id="list" alignment="TOP_CENTER">
                <children>
-                  <Label fx:id="nom" prefHeight="45.0" prefWidth="273.0" text="NOM" translateX="10.0" translateY="5.0">
+                  <Label fx:id="nom" prefHeight="45.0" prefWidth="273.0" text="NOM" textFill="RED" translateX="10.0" translateY="5.0">
                      <font>
                         <Font size="32.0" />
                      </font>
@@ -47,7 +47,7 @@
                      </VBox.margin>
                   </Circle>
                   <ImageView fx:id="image" fitHeight="208.0" fitWidth="233.0" pickOnBounds="true" preserveRatio="true" />
-                  <Label fx:id="game" prefHeight="22.0" prefWidth="268.0" text="Game">
+                  <Label fx:id="game" prefHeight="22.0" prefWidth="268.0" text="Game" textFill="BLUE">
                      <VBox.margin>
                         <Insets />
                      </VBox.margin>

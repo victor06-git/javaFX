@@ -16,7 +16,7 @@
          <children>
             <HBox alignment="CENTER" maxHeight="50.0" minHeight="50.0" spacing="10.0" style="-fx-background-color: rgb(150,190,250);" VBox.vgrow="NEVER">
                <children>
-                  <ImageView fx:id="imgArrowBack" fitHeight="25.0" fitWidth="25.0" onMouseClicked="#toViewMain" pickOnBounds="true" preserveRatio="true" translateX="-55.0">
+                  <ImageView fx:id="imgArrowBack" fitHeight="25.0" fitWidth="25.0" onMouseClicked="#toViewMain" pickOnBounds="true" preserveRatio="true" translateX="-65.0">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>
@@ -33,7 +33,7 @@
             </HBox>
             <VBox fx:id="list" alignment="TOP_CENTER" prefHeight="282.0" prefWidth="300.0">
                <children>
-                  <Label fx:id="nom" prefHeight="45.0" prefWidth="273.0" text="NOM" translateX="10.0" translateY="5.0">
+                  <Label fx:id="nom" prefHeight="45.0" prefWidth="273.0" text="NOM" textFill="#f50000" translateX="10.0" translateY="5.0">
                      <font>
                         <Font size="32.0" />
                      </font>
@@ -41,24 +41,24 @@
                         <Insets />
                      </VBox.margin>
                   </Label>
-                  <ImageView fx:id="image" fitHeight="190.0" fitWidth="233.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="image" fitHeight="161.0" fitWidth="233.0" pickOnBounds="true" preserveRatio="true" />
                </children>
             </VBox>
             <HBox alignment="CENTER_LEFT" prefHeight="127.0" prefWidth="282.0" spacing="10.0">
                <children>
-                  <VBox alignment="TOP_LEFT" prefWidth="200.0" spacing="10.0">
+                  <VBox alignment="TOP_RIGHT" prefHeight="88.0" prefWidth="200.0" spacing="10.0">
                      <children>
-                        <Label fx:id="date" prefHeight="29.0" prefWidth="183.0" text="Fecha">
+                        <Label fx:id="date" prefHeight="29.0" prefWidth="183.0" text="Fecha" textFill="#0232f5">
                            <font>
                               <Font size="20.0" />
                            </font>
                         </Label>
-                        <Label fx:id="cpu" prefHeight="29.0" prefWidth="187.0" text="CPU">
+                        <Label fx:id="cpu" prefHeight="29.0" prefWidth="187.0" text="CPU" textFill="#2a00ff">
                            <font>
                               <Font size="20.0" />
                            </font>
                         </Label>
-                        <Label fx:id="units" prefHeight="29.0" prefWidth="186.0" text="Unidades">
+                        <Label fx:id="units" prefHeight="29.0" prefWidth="186.0" text="Unidades" textFill="#0006ff">
                            <font>
                               <Font size="20.0" />
                            </font>
