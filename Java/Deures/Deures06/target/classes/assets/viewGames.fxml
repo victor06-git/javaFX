@@ -28,7 +28,7 @@
                         <Insets left="15.0" />
                      </HBox.margin>
                   </VBox>
-                  <Label maxHeight="50.0" text="Games" HBox.hgrow="ALWAYS">
+                  <Label maxHeight="50.0" text="Jocs" translateX="75.0" HBox.hgrow="ALWAYS">
                      <font>
                         <Font size="24.0" />
                      </font>

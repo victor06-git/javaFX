@@ -31,7 +31,7 @@
                   </Label>
                </children>
             </HBox>
-            <VBox fx:id="list" alignment="TOP_CENTER">
+            <VBox fx:id="list" alignment="TOP_CENTER" prefHeight="282.0" prefWidth="300.0">
                <children>
                   <Label fx:id="nom" prefHeight="45.0" prefWidth="273.0" text="NOM" translateX="10.0" translateY="5.0">
                      <font>
@@ -41,32 +41,33 @@
                         <Insets />
                      </VBox.margin>
                   </Label>
-                  <Circle fx:id="circle" fill="DODGERBLUE" radius="20.0" scaleZ="0.5" stroke="BLACK" strokeType="INSIDE" translateX="1.0" translateY="230.0">
-                     <VBox.margin>
-                        <Insets left="200.0" />
-                     </VBox.margin>
-                  </Circle>
-                  <ImageView fx:id="image" fitHeight="208.0" fitWidth="233.0" pickOnBounds="true" preserveRatio="true" translateY="-20.0" />
-                  <Label fx:id="date" prefHeight="22.0" prefWidth="268.0" text="date">
-                     <VBox.margin>
-                        <Insets />
-                     </VBox.margin>
-                     <font>
-                        <Font size="20.0" />
-                     </font>
-                  </Label>
+                  <ImageView fx:id="image" fitHeight="190.0" fitWidth="233.0" pickOnBounds="true" preserveRatio="true" />
                </children>
             </VBox>
-            <Label fx:id="cpu" prefHeight="18.0" prefWidth="203.0" text="cpu" translateX="15.0">
-               <font>
-                  <Font size="20.0" />
-               </font>
-            </Label>
-            <Label fx:id="units" prefHeight="18.0" prefWidth="205.0" text="units" translateX="15.0">
-               <font>
-                  <Font size="20.0" />
-               </font>
-            </Label>
+            <HBox alignment="CENTER_LEFT" prefHeight="127.0" prefWidth="282.0" spacing="10.0">
+               <children>
+                  <VBox alignment="TOP_LEFT" prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <Label fx:id="date" prefHeight="29.0" prefWidth="183.0" text="Fecha">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="cpu" prefHeight="29.0" prefWidth="187.0" text="CPU">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="units" prefHeight="29.0" prefWidth="186.0" text="Unidades">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <Circle fx:id="circle" fill="DODGERBLUE" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+               </children>
+            </HBox>
          </children>
       </VBox>
    </children>

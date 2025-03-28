@@ -21,7 +21,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </ImageView>
-                  <Label maxHeight="50.0" text="Console" translateX="-20.0" HBox.hgrow="ALWAYS">
+                  <Label maxHeight="50.0" text="Consola" translateX="-20.0" HBox.hgrow="ALWAYS">
                      <font>
                         <Font size="24.0" />
                      </font>
@@ -41,11 +41,6 @@
                         <Insets />
                      </VBox.margin>
                   </Label>
-                  <Circle fx:id="circle" fill="DODGERBLUE" radius="20.0" scaleZ="0.5" stroke="BLACK" strokeType="INSIDE" translateX="1.0" translateY="230.0">
-                     <VBox.margin>
-                        <Insets left="200.0" />
-                     </VBox.margin>
-                  </Circle>
                   <ImageView fx:id="image" fitHeight="208.0" fitWidth="233.0" pickOnBounds="true" preserveRatio="true" translateY="-20.0" />
                   <Label fx:id="date" prefHeight="22.0" prefWidth="268.0" text="date">
                      <VBox.margin>
@@ -67,6 +62,11 @@
                   <Font size="20.0" />
                </font>
             </Label>
+         </children>
+      </VBox>
+      <VBox alignment="BOTTOM_RIGHT" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Circle fx:id="circle" fill="DODGERBLUE" radius="20.0" stroke="BLACK" strokeType="INSIDE" translateX="-40.0" translateY="-50.0" />
          </children>
       </VBox>
    </children>
