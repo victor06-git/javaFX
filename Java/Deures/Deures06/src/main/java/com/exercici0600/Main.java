@@ -23,8 +23,8 @@ public class Main extends Application {
     public void start(Stage stage) throws Exception {
 
         UtilsViews.parentContainer.setStyle("-fx-font: 14 arial;");
-        UtilsViews.addView(getClass(), "ViewFitxa", "/assets/viewPersonatgeFitxa.fxml");
-        UtilsViews.addView(getClass(), "ViewFormulari", "/assets/viewPersonatgeFormulari.fxml");
+        UtilsViews.addView(getClass(), "View0", "/assets/exercici0600Fitxa.fxml");
+        UtilsViews.addView(getClass(), "View1", "/assets/exercici0600Formulari.fxml");
 
         Scene scene = new Scene(UtilsViews.parentContainer);
 
