@@ -4,19 +4,30 @@ import java.io.File;
 import java.nio.file.Path;
 import java.util.Objects;
 
+import com.utils.UtilsViews;
+
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.shape.Circle;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 
 public class ControllerPokeItem {
+
+    @FXML
+    private int number;
 
     @FXML
     private Label title, subtitle;
 
     @FXML
     private ImageView img;
+
+    @FXML
+    public void setId(Integer id) {
+        this.number = id;
+    }
 
     public void setTitle(String title) {
         this.title.setText(title);
@@ -35,5 +46,12 @@ public class ControllerPokeItem {
             System.err.println("Error loading image asset: " + imagePath);
             e.printStackTrace();
         }
+    }
+
+    @FXML
+    public void toViewCard(MouseEvent event) {
+        ControllerPokeCard ctrl = (ControllerPokeCard) UtilsViews.getController("ViewCard");
+        ctrl.loadPokemon(this.number);
+        UtilsViews.setViewAnimating("ViewCard");
     }
 }

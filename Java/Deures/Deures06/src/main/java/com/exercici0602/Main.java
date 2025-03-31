@@ -26,6 +26,7 @@ public class Main extends Application {
         UtilsViews.addView(getClass(), "ViewCard", "/assets/viewPokeCard.fxml");
         UtilsViews.addView(getClass(), "ViewForm", "/assets/viewPokeForm.fxml");
 
+
         Scene scene = new Scene(UtilsViews.parentContainer);
 
         stage.setScene(scene);

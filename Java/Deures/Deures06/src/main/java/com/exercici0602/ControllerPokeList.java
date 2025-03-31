@@ -48,7 +48,7 @@ public class ControllerPokeList {
             String name = (String) pokemon.get("name");
             String type = (String) pokemon.get("type");
             String imagePath = (String) pokemon.get("image");
-            //Integer number = (Integer) pokemon.get("number");
+            Integer number = (Integer) pokemon.get("number");
 
             // Carregar el template
             FXMLLoader loader = new FXMLLoader(resource);
@@ -57,6 +57,7 @@ public class ControllerPokeList {
 
             // Assignar els valors als controls del template
             itemController.setTitle(name);
+            itemController.setId(number);
             itemController.setSubtitle(type);
             itemController.setImatge(imagePath);
 
