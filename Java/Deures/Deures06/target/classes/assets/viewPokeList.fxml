@@ -22,7 +22,7 @@
                <children>
                   <VBox alignment="CENTER" prefHeight="77.0" prefWidth="55.0" translateX="350.0">
                      <children>
-                        <Button alignment="CENTER_RIGHT" mnemonicParsing="false" text="Add" />
+                        <Button alignment="CENTER_RIGHT" mnemonicParsing="false" onAction="#addPokemon" text="Add" />
                      </children>
                      <cursor>
                         <Cursor fx:constant="DEFAULT" />
@@ -31,7 +31,7 @@
                         <Blend mode="MULTIPLY" />
                      </effect>
                   </VBox>
-                  <Label nodeOrientation="LEFT_TO_RIGHT" text="POKEMON BBDD" textFill="#00ceff" translateX="-200.0">
+                  <Label nodeOrientation="LEFT_TO_RIGHT" text="POKEMON DB" textFill="#00ceff" translateX="-200.0">
                      <font>
                         <Font name="Noto Sans Georgian Bold" size="26.0" />
                      </font>
@@ -54,7 +54,7 @@
             </HBox>
             <ScrollPane prefHeight="323.0" prefWidth="563.0">
                <content>
-                  <VBox prefHeight="320.0" prefWidth="598.0">
+                  <VBox fx:id="list">
                      <children>
                         <AnchorPane prefHeight="65.0" prefWidth="598.0" style="-fx-background-color: WHITE; -fx-border-style: SOLID; -fx-border-color: grey; -fx-border-width: 0 0 1 0;">
                            <children>

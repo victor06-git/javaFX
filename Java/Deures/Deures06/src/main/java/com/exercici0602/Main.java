@@ -24,7 +24,7 @@ public class Main extends Application {
         UtilsViews.parentContainer.setStyle("-fx-font: 14 arial;");
         UtilsViews.addView(getClass(), "ViewTaula", "/assets/viewPokeList.fxml");
         UtilsViews.addView(getClass(), "ViewInici", "/assets/viewPokeCard.fxml");
-        UtilsViews.addView(getClass(), "ViewTaula", "/assets/viewPokeForm.fxml");
+        UtilsViews.addView(getClass(), "ViewTaula2", "/assets/viewPokeForm.fxml");
 
         Scene scene = new Scene(UtilsViews.parentContainer);
 
@@ -35,6 +35,10 @@ public class Main extends Application {
         stage.setMinHeight(MIN_HEIGHT);
         stage.setHeight(WINDOW_HEIGHT);
         stage.show();
+
+        //Carregar dades de la llista inicial
+        ControllerPokeList crtl = (ControllerPokeList) UtilsViews.getController("ViewTaula");
+        crtl.loadList();
         
 
         // Afegeix una icona només si no és un Mac

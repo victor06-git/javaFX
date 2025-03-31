@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="56.0" maxWidth="441.0" minHeight="-Infinity" nodeOrientation="RIGHT_TO_LEFT" onMouseClicked="#toViewCharacter" prefHeight="56.0" prefWidth="441.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.exercici0601.ControllerItem1">
+<AnchorPane maxHeight="56.0" maxWidth="441.0" minHeight="-Infinity" nodeOrientation="RIGHT_TO_LEFT" prefHeight="56.0" prefWidth="441.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.exercici0602.ControllerItemList">
    <children>
       <VBox prefHeight="20.0" prefWidth="60.0" />
       <ImageView fx:id="image" fitHeight="39.0" fitWidth="68.0" layoutX="64.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="11.0" AnchorPane.leftAnchor="64.0" AnchorPane.rightAnchor="310.0" AnchorPane.topAnchor="6.0" />
