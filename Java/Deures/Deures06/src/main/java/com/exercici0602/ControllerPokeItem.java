@@ -1,45 +1,39 @@
 package com.exercici0602;
 
 import java.io.File;
+import java.nio.file.Path;
 import java.util.Objects;
-
-import com.utils.UtilsViews;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import javafx.scene.shape.Circle;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.input.MouseEvent;
 
-public class ControllerItemList {
-    
-    @FXML
-    private Label name, type, number;
+public class ControllerPokeItem {
 
     @FXML
-    private ImageView image;
+    private Label title, subtitle;
 
-    public void setName(String name) {
-        this.name.setText(name);
+    @FXML
+    private ImageView img;
+
+    public void setTitle(String title) {
+        this.title.setText(title);
     }
 
-    public void setType(String type) {
-        this.type.setText(type);
-    }
-
-    public void setNumber(String number) {
-        this.number.setText("#" + number);
+    public void setSubtitle(String subtitle) {
+        this.subtitle.setText(subtitle);
     }
 
     public void setImatge(String imagePath) {
         try {
             File file = new File(imagePath);
             Image image = new Image(file.toURI().toString());
-            this.image.setImage(image);
+            this.img.setImage(image);
         } catch (NullPointerException e) {
             System.err.println("Error loading image asset: " + imagePath);
             e.printStackTrace();
         }
     }
-
 }

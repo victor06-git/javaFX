@@ -22,9 +22,9 @@ public class Main extends Application {
 
         // Carrega la vista inicial des del fitxer FXML
         UtilsViews.parentContainer.setStyle("-fx-font: 14 arial;");
-        UtilsViews.addView(getClass(), "ViewTaula", "/assets/viewPokeList.fxml");
-        UtilsViews.addView(getClass(), "ViewInici", "/assets/viewPokeCard.fxml");
-        UtilsViews.addView(getClass(), "ViewTaula2", "/assets/viewPokeForm.fxml");
+        UtilsViews.addView(getClass(), "ViewList", "/assets/viewPokeList.fxml");
+        UtilsViews.addView(getClass(), "ViewCard", "/assets/viewPokeCard.fxml");
+        UtilsViews.addView(getClass(), "ViewForm", "/assets/viewPokeForm.fxml");
 
         Scene scene = new Scene(UtilsViews.parentContainer);
 
@@ -37,7 +37,7 @@ public class Main extends Application {
         stage.show();
 
         //Carregar dades de la llista inicial
-        ControllerPokeList crtl = (ControllerPokeList) UtilsViews.getController("ViewTaula");
+        ControllerPokeList crtl = (ControllerPokeList) UtilsViews.getController("ViewList");
         crtl.loadList();
         
 
