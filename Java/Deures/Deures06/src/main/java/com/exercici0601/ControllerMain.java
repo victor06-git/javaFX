@@ -25,11 +25,27 @@ public class ControllerMain {
     @FXML
     private ImageView image;
 
+    @FXML
+    private ImageView gameImage;
+
+    @FXML
+    private ImageView characterImage;
+
+    @FXML
+    private ImageView consoleImage;
+
 
     @FXML
     public void initialize() {
         Image img = new Image(getClass().getResourceAsStream("/icons/kirbyNintendo.gif"));
         image.setImage(img);
+        Image img_console = new Image(getClass().getResourceAsStream("/icons/consolesNintendo.gif"));
+        consoleImage.setImage(img_console);
+        Image img_game = new Image(getClass().getResourceAsStream("/icons/donkey.gif"));
+        gameImage.setImage(img_game);
+        Image img_character = new Image(getClass().getResourceAsStream("/icons/marios.gif"));
+        characterImage.setImage(img_character);
+        
     }
 
     @FXML
